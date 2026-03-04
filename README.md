@@ -1,6 +1,6 @@
 # Balico Health Impact Analysis
 
-This repository contains a reproducible workflow to estimate and visualize the **air pollution and health impacts of emissions from a proposed natural gas power plant** using the **InMAP Source-Receptor Matrix (ISRM)** framework.
+This repository contains a reproducible workflow to estimate and visualize the **air pollution and health impacts of emissions from a proposed natural gas power plant** using the **InMAP  reduced air complexity model**.
 
 The pipeline processes emissions data, prepares model inputs, runs InMAP simulations, and produces spatial outputs and figures for downstream analysis and reporting.
 
@@ -9,6 +9,7 @@ The pipeline processes emissions data, prepares model inputs, runs InMAP simulat
 # Repository Structure
 
 Balico_health_impact_analysis/
+```
 
 │
 ├── scripts/
@@ -27,6 +28,7 @@ Balico_health_impact_analysis/
 │ └── Example run directory
 │
 └── README.md
+```
 
 
 ---
