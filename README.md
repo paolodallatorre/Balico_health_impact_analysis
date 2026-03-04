@@ -6,7 +6,7 @@ The pipeline processes emissions data, prepares model inputs, runs InMAP simulat
 
 ---
 
-# Repository Structure
+## Repository Structure
 
 Balico_health_impact_analysis/
 ```
@@ -111,11 +111,11 @@ Main tasks:
 
 Outputs include:
 
-`
+```
 PM concentration surfaces
 aggregated exposure datasets
 processed spatial layers
-`
+```
 
 ---
 
