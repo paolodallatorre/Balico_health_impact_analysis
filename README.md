@@ -97,7 +97,7 @@ run_folder/config.toml
 
 ---
 
-## 3. `3.post-processing.R`
+## 3. `post-processing.R`
 
 Processes the **raw InMAP outputs**.
 
@@ -111,11 +111,11 @@ Main tasks:
 
 Outputs include:
 
-```
+`
 PM concentration surfaces
 aggregated exposure datasets
 processed spatial layers
-```
+`
 
 ---
 
@@ -161,9 +161,9 @@ Outputs:
 The simulation is controlled by a **TOML configuration file**.
 
 Template:
-
+```
 Config_template.toml
-
+```
 
 Before running a simulation:
 
@@ -172,9 +172,9 @@ Before running a simulation:
 3. Save the new configuration in the run folder.
 
 Example run:
-
+```
 26.02.19/
-
+```
 
 This directory contains an example of the full pipeline output for a specific simulation.
 
