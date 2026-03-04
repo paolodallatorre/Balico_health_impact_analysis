@@ -246,19 +246,19 @@ Example:
 ```
 This directory stores:
 
--configuration files
--model inputs
--processed outputs
--figures
+- configuration files
+- model inputs
+- processed outputs
+- figures
 
 
 ## Applications
 
 This pipeline was developed to support air pollution health impact assessments, including:
 
--evaluation of proposed power plants
--environmental justice analyses
--policy-relevant exposure assessments.
+- evaluation of proposed power plants
+- environmental justice analyses
+- policy-relevant exposure assessments.
 
 
 ## Author
