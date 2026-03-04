@@ -89,17 +89,37 @@ Main tasks:
 - Write the run-specific configuration file.
 
 Output:
+
+```
+run_folder/config.toml
+```
+
+
+---
+
+## 3. `3.post-processing.R`
+
+Processes the **raw InMAP outputs**.
+
+Main tasks:
+
+- Load output shapefiles
+- Convert grid-level outputs to spatial objects
+- Compute **area-weighted PM₂.₅ exposure**
+- Aggregate impacts to geographic units (e.g., census tracts or counties)
+- Prepare datasets for visualization and further analysis.
+
+Outputs include:
+
 ```
 PM concentration surfaces
 aggregated exposure datasets
 processed spatial layers
 ```
 
-
-
 ---
 
-## 4. `4.plots_github.R`
+## 4. `plots_github.R`
 
 Generates publication-ready figures.
 
@@ -117,7 +137,7 @@ These figures are used for:
 
 ---
 
-## 5. `5.sociodemographic_analysis.R`
+## 5. `sociodemographic_analysis.R`
 
 Links modeled pollution exposure to **demographic characteristics**.
 
@@ -125,7 +145,7 @@ Main tasks:
 
 - Load **ACS demographic data**
 - Merge with spatial pollution exposure estimates
-- Compute **population-weighted exposure metrics**
+- Compute **area-weighted exposure metrics**
 - Analyze exposure across socioeconomic and demographic groups.
 
 Outputs:
@@ -181,22 +201,22 @@ Typical workflow:
 source("scripts/1.pre-processing.R")
 ```
 
-Step 2 — Generate configuration file
-
+Step 2.0 — Generate configuration file
+```
 source("scripts/2.config_file_creation.R")
-
-Step 3 — Run InMAP simulation
+```
+Step 2.1 — Run InMAP simulation
 
 Run the reduced complexity air dispersion model using the generated config file.
 
-Step 4 — Post-process outputs
-
+Step 3 — Post-process outputs
+```r
 source("scripts/3.post-processing.R")
-
-Step 5 — Create plots
-
+```
+Step 4 — Create plots
+```
 source("scripts/4.plots_github.R")
-
+```
 Step 6 — Run demographic analysis
 
 source("scripts/5.sociodemographic_analysis.R")
