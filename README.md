@@ -36,6 +36,7 @@ Balico_health_impact_analysis/
 # Overview of the Workflow
 
 The workflow is organized into **five sequential scripts**, each responsible for a stage of the analysis pipeline.
+```
 
 Pre-processing
 ↓
@@ -46,6 +47,7 @@ InMAP simulation
 Post-processing
 ↓
 Visualization and sociodemographic analysis
+```
 
 
 
@@ -66,8 +68,9 @@ Main tasks:
 - Export an **InMAP input shapefile**
 
 Output:
-
+```
 run_folder/input_*.shp
+```
 
 
 ---
