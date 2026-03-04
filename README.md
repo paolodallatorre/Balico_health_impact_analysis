@@ -33,7 +33,7 @@ Balico_health_impact_analysis/
 
 ---
 
-# Overview of the Workflow
+## Overview of the Workflow
 
 The workflow is organized into **five sequential scripts**, each responsible for a stage of the analysis pipeline.
 ```
@@ -53,9 +53,9 @@ Visualization and sociodemographic analysis
 
 ---
 
-# Script Descriptions
+## Script Descriptions
 
-## 1. `pre-processing.R`
+### 1. `pre-processing.R`
 
 Prepares the emissions and spatial data needed for the InMAP simulation.
 
@@ -75,7 +75,7 @@ run_folder/input_*.shp
 
 ---
 
-## 2. `config_file_creation.R`
+### 2. `config_file_creation.R`
 
 Generates the **InMAP configuration file** for a specific simulation.
 
@@ -97,7 +97,7 @@ run_folder/config.toml
 
 ---
 
-## 3. `post-processing.R`
+### 3. `post-processing.R`
 
 Processes the **raw InMAP outputs**.
 
@@ -119,7 +119,7 @@ processed spatial layers
 
 ---
 
-## 4. `plots_github.R`
+### 4. `plots_github.R`
 
 Generates publication-ready figures.
 
@@ -137,7 +137,7 @@ These figures are used for:
 
 ---
 
-## 5. `sociodemographic_analysis.R`
+### 5. `sociodemographic_analysis.R`
 
 Links modeled pollution exposure to **demographic characteristics**.
 
@@ -156,7 +156,7 @@ Outputs:
 
 ---
 
-# Configuration
+## Configuration
 
 The simulation is controlled by a **TOML configuration file**.
 
@@ -180,7 +180,7 @@ This directory contains an example of the full pipeline output for a specific si
 
 ---
 
-# Data Requirements
+## Data Requirements
 
 The `data/` directory must contain:
 
@@ -191,7 +191,7 @@ These files are **not included in the repository** due to size or licensing cons
 
 ---
 
-# Running the Pipeline
+## Running the Pipeline
 
 Typical workflow:
 
@@ -201,30 +201,31 @@ Typical workflow:
 source("scripts/1.pre-processing.R")
 ```
 
-Step 2.0 — Generate configuration file
+### Step 2.0 — Generate configuration file
 ```
 source("scripts/2.config_file_creation.R")
 ```
-Step 2.1 — Run InMAP simulation
+### Step 2.1 — Run InMAP simulation
 
 Run the reduced complexity air dispersion model using the generated config file.
 
-Step 3 — Post-process outputs
+### Step 3 — Post-process outputs
 ```r
 source("scripts/3.post-processing.R")
 ```
-Step 4 — Create plots
+### Step 4 — Create plots
 ```
 source("scripts/4.plots_github.R")
 ```
-Step 6 — Run demographic analysis
-
+### Step 5 — Run demographic analysis
+```
 source("scripts/5.sociodemographic_analysis.R")
+```
 
-Dependencies
+## Dependencies
 
 Key R packages used in this project include:
-
+```
 sf
 dplyr
 ggplot2
@@ -232,40 +233,35 @@ readr
 tibble
 tidyr
 stringr
-
+```
 Additional spatial packages may be required depending on the environment.
 
-Reproducibility
+## Reproducibility
 
 Each run of the pipeline creates a timestamped run directory, ensuring that outputs from different simulations remain fully reproducible and separated.
 
 Example:
-
+```
 26.02.19/
-
+```
 This directory stores:
 
-configuration files
-
-model inputs
-
-processed outputs
-
-figures
+-configuration files
+-model inputs
+-processed outputs
+-figures
 
 
-Applications
+## Applications
 
 This pipeline was developed to support air pollution health impact assessments, including:
 
-evaluation of proposed power plants
-
-environmental justice analyses
-
-policy-relevant exposure assessments.
+-evaluation of proposed power plants
+-environmental justice analyses
+-policy-relevant exposure assessments.
 
 
-Author
+## Author
 
 Paolo Dalla Torre di Sanguinetto
 Harvard T.H. Chan School of Public Health
