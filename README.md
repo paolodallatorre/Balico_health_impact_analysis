@@ -264,7 +264,9 @@ This pipeline was developed to support air pollution health impact assessments, 
 ## Author
 
 Paolo Dalla Torre di Sanguinetto
+
 Harvard T.H. Chan School of Public Health
+
 Bocconi University
 
 
