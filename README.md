@@ -55,7 +55,7 @@ Visualization and sociodemographic analysis
 
 # Script Descriptions
 
-## 1. `1.pre-processing.R`
+## `1.pre-processing.R`
 
 Prepares the emissions and spatial data needed for the InMAP simulation.
 
