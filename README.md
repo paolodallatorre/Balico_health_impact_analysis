@@ -55,7 +55,7 @@ Visualization and sociodemographic analysis
 
 # Script Descriptions
 
-## `1.pre-processing.R`
+## 1. `pre-processing.R`
 
 Prepares the emissions and spatial data needed for the InMAP simulation.
 
@@ -75,7 +75,7 @@ run_folder/input_*.shp
 
 ---
 
-## 2. `2.config_file_creation.R`
+## 2. `config_file_creation.R`
 
 Generates the **InMAP configuration file** for a specific simulation.
 
@@ -89,10 +89,11 @@ Main tasks:
 - Write the run-specific configuration file.
 
 Output:
-
+```
 PM concentration surfaces
 aggregated exposure datasets
 processed spatial layers
+```
 
 
 
